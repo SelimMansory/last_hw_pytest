@@ -10,6 +10,7 @@ def test_get(date):
     with pytest.raises(IndexError):
         assert arrs.get([], 0, "test") == "test"
     assert arrs.get(date, -1, 'test') == 'test'
+   
 
 def test_slice(date):
     assert arrs.my_slice([1, 2, 3, 4], 1, 3) == [2, 3]
